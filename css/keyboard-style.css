@@ -1,0 +1,118 @@
+.textarea {
+    width: 890px;
+    height: 250px;
+    resize: none;
+    display: block;
+    margin: 0 auto;
+    font-family: sans-serif;
+    font-size: 18px;
+    border: 2px solid #181616;
+}
+
+.keyboard {
+    margin: 0 auto;
+    width: 915px;
+    height: 245px;
+    background-color: #454545;
+    margin-top: 20px;
+}
+
+.keyboard__keys {
+    text-align: center;
+    user-select: none;
+}
+
+.keyboard__key {
+    height: 45px;
+    width: 59px;
+    font-size: 16px;
+    border: none;
+    margin: 2px;
+    outline: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: top;
+    padding: 0px;
+    position: relative;
+}
+
+.keyboard__key:hover {
+    background-color: #cdcdcd;
+}
+
+.backspace {
+    width: 90px;
+}
+
+.left,
+.right {
+    background-repeat: no-repeat;
+    background-size: 23px;
+    background-position-x: center;
+    background-position-y: center;
+}
+
+.up,
+.down {
+    background-size: 46px;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: 0px;
+}
+
+.space {
+    width: 407px;
+}
+
+.win {
+    background-image: url('../assets/images/lang.svg');
+    background-size: 60%;
+    background-position: 12px 5px;
+    background-repeat: no-repeat;
+}
+
+.tab,
+.del {
+    width: 43px
+}
+
+.enter,
+.caps {
+    width: 107px;
+}
+
+.shift-left {
+    width: 155px;
+}
+
+.info-wrapper {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.up,
+.left,
+.right,
+.down,
+.space,
+.tab,
+.del,
+.enter,
+.caps,
+.shift-left,
+.shift-right,
+.backspace,
+.win,
+.ctrl-left,
+.alt-left,
+.ctrl-right,
+.alt-right {
+    background-color: #bab2b2;
+}
+
+.keyboard__key:active,
+.active {
+    background-color: #898989;
+}

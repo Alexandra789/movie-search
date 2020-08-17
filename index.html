@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie search</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link href="./css/style.css" rel="stylesheet">
+    <link href="./css/keyboard-style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="title">Movie Search</h1>
+    </header>
+    <main class="container col-xs-12">
+         <div class="search">
+            <input type="text" class="search-input" type="text" placeholder="Search movie" autofocus>
+            <button class="search-btn" type="submit">Search</button>
+            <span data-name="clear" class="search-clear tooltip"></span>
+            <span data-name="keyboard" class="search-tia tooltip"></span>
+         </div>
+        <div class="alert-container"></div>
+        <div class="carousel-container">
+            <div class="carousel"></div>
+        </div>
+        <div class="keyboard-container"></div>
+
+    </main>
+    <footer class="footer col-xs-12">
+        <div class="footer-container">
+            <a href="https://rs.school/" class="rss">
+                RS School 2020q1
+            </a>
+            <a href="https://github.com/Alexandra789" class="github">
+                Alexandra789
+            </a>
+        </div>
+    </footer>
+    <script src="src/keyboard/constants.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script type="module" src="dist/bundle.js"></script>
+</body>
+</html>

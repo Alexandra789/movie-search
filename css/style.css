@@ -1,0 +1,374 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+}
+body .header {
+  height: 110px;
+  color: #fff;
+  background-image: url(../assets/images/header.jpg);
+  background-size: cover;
+  margin-bottom: 40px;
+  overflow-x: hidden;
+}
+body .header h1 {
+  font-size: 40px;
+  font-weight: 900;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  line-height: 110px;
+}
+body .container {
+  max-width: 1440px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+body .container .search {
+  position: relative;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  width: 100%;
+  color: #212529;
+  height: 45px;
+}
+body .container .search .search-btn {
+  background-color: #9f1405;
+  border: none;
+  font-size: 18px;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  display: block;
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  height: 45px;
+  padding: 8px 15px;
+  width: 90px;
+  outline: none;
+}
+body .container .search .search-btn:hover {
+  filter: drop-shadow(2px 4px 6px black);
+}
+body .container .search .search-input {
+  width: calc(100% - 90px);
+  max-width: 1350px;
+  background-image: url(../assets/images/search.svg);
+  background-repeat: no-repeat;
+  background-size: 34px;
+  background-position: 10px 5px;
+  border-radius: 5px;
+  border: 1px solid #ced4da;
+  cursor: text;
+  display: block;
+  font-size: 22px;
+  font-weight: 400;
+  height: 45px;
+  margin-right: 10px;
+  padding: 8px 15px;
+  padding-left: 65px;
+  padding-right: 150px;
+}
+body .container .search .search-input::placeholder {
+  color: #7b8a8b;
+}
+body .container .search .search-input:hover {
+  filter: drop-shadow(2px 4px 6px black);
+}
+body .container .search .search-clear {
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  background-image: url(../assets/images/clear.svg);
+  background-size: 20px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  right: 135px;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: 0.2s;
+}
+body .container .search span:hover {
+  filter: drop-shadow(2px 4px 0px black);
+}
+body .container .search .search-tia {
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  background-image: url(../assets/images/keyboard.svg);
+  background-size: 20px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  right: 100px;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: 0.2s;
+}
+body .container .search .tooltip:hover:before {
+  content: "";
+  position: absolute;
+  top: 25px;
+  left: 10px;
+  width: 0;
+  height: 0;
+  border: 15px solid transparent;
+  border-bottom-color: #9f1405;
+}
+body .container .search .tooltip:hover:after {
+  content: attr(data-name);
+  position: absolute;
+  padding: 7px 12px;
+  width: 80px;
+  top: 50px;
+  left: -28px;
+  background: #9f1405;
+  border-radius: 8px;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+}
+body .container .search .info {
+  height: 40px;
+  margin: 0;
+  padding: 0 10px;
+  margin-bottom: 30px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 40px;
+  text-align: center;
+  color: #d62c1a;
+}
+body .container .carousel {
+  display: block;
+  /* flex-wrap: wrap; */
+  justify-content: center;
+}
+body .container .carousel .card {
+  border: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 0;
+  padding-right: 0;
+  border-radius: 2px;
+  margin-right: 20px;
+  box-shadow: 4px 4px 4px 1px #7b8a8b;
+  width: 325px;
+  height: 350px;
+}
+body .container .carousel .card img {
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  width: 100%;
+  height: 290px;
+}
+body .container .carousel .card .card-body {
+  padding: 10px;
+}
+body .container .carousel .card .card-body .card-title {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+body .container .carousel .card .card-body .card-info {
+  text-align: left;
+}
+body .container .carousel .card .card-body .card-info .card-rating {
+  float: right;
+}
+body .footer {
+  width: 100%;
+  min-height: 60px;
+  margin-top: 40px;
+  background-color: #2a0500;
+}
+body .footer .footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  min-height: 60px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+body .footer .footer-container a {
+  color: #eee;
+  text-decoration: none;
+  transition: 0.3s;
+}
+body .footer .footer-container a:hover {
+  filter: drop-shadow(2px 4px 6px black);
+}
+
+@media (max-width: 1600px) {
+  body .footer .footer-container {
+    max-width: 1060px;
+  }
+}
+.keyboard-container {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  bottom: 0;
+  left: 50%;
+  margin-left: -458px;
+}
+
+.alert-container {
+  height: 52px;
+}
+.alert-container .loader {
+  font-size: 30px;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+.loader {
+  color: darkred;
+  font-size: 90px;
+  text-indent: -9999em;
+  overflow: hidden;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  margin: 72px auto;
+  position: relative;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation: load6 1.7s infinite ease, round 1.7s infinite ease;
+  animation: load6 1.7s infinite ease, round 1.7s infinite ease;
+}
+
+@-webkit-keyframes load6 {
+  0% {
+    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+  }
+  5%, 95% {
+    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+  }
+  10%, 59% {
+    box-shadow: 0 -0.83em 0 -0.4em, -0.087em -0.825em 0 -0.42em, -0.173em -0.812em 0 -0.44em, -0.256em -0.789em 0 -0.46em, -0.297em -0.775em 0 -0.477em;
+  }
+  20% {
+    box-shadow: 0 -0.83em 0 -0.4em, -0.338em -0.758em 0 -0.42em, -0.555em -0.617em 0 -0.44em, -0.671em -0.488em 0 -0.46em, -0.749em -0.34em 0 -0.477em;
+  }
+  38% {
+    box-shadow: 0 -0.83em 0 -0.4em, -0.377em -0.74em 0 -0.42em, -0.645em -0.522em 0 -0.44em, -0.775em -0.297em 0 -0.46em, -0.82em -0.09em 0 -0.477em;
+  }
+  100% {
+    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+  }
+}
+@keyframes load6 {
+  0% {
+    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+  }
+  5%, 95% {
+    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+  }
+  10%, 59% {
+    box-shadow: 0 -0.83em 0 -0.4em, -0.087em -0.825em 0 -0.42em, -0.173em -0.812em 0 -0.44em, -0.256em -0.789em 0 -0.46em, -0.297em -0.775em 0 -0.477em;
+  }
+  20% {
+    box-shadow: 0 -0.83em 0 -0.4em, -0.338em -0.758em 0 -0.42em, -0.555em -0.617em 0 -0.44em, -0.671em -0.488em 0 -0.46em, -0.749em -0.34em 0 -0.477em;
+  }
+  38% {
+    box-shadow: 0 -0.83em 0 -0.4em, -0.377em -0.74em 0 -0.42em, -0.645em -0.522em 0 -0.44em, -0.775em -0.297em 0 -0.46em, -0.82em -0.09em 0 -0.477em;
+  }
+  100% {
+    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+  }
+}
+@-webkit-keyframes round {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes round {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@media (max-width: 1600px) {
+  body .footer .footer-container {
+    max-width: 1060px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 400px) {
+  .keyboard {
+    display: none;
+  }
+
+  body .container .carousel .card {
+    margin-left: 35px;
+    margin-right: 0px;
+    width: 295px;
+  }
+  body .container .search .search-input {
+    background-size: 25px;
+    background-position: 10px 10px;
+    font-size: 18px;
+    margin-right: 10px;
+    padding: 8px 45px;
+  }
+  body .container .search .search-input::placeholder {
+    font-size: 16px;
+  }
+  body .container .search .search-tia {
+    display: none;
+  }
+  body .container .search .search-clear {
+    right: 110px;
+  }
+}
+@media screen and (min-width: 400px) and (max-width: 1000px) {
+  .keyboard {
+    display: none;
+  }
+
+  body .container .search .search-input {
+    background-size: 25px;
+    background-position: 10px 10px;
+    font-size: 20px;
+    margin-right: 10px;
+    padding: 8px 45px;
+  }
+  body .container .search .search-input::placeholder {
+    font-size: 25px;
+  }
+  body .container .search .search-tia {
+    display: none;
+  }
+  body .container .search .search-clear {
+    right: 110px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
