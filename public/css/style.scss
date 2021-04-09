@@ -17,7 +17,7 @@ body {
   .header {
     height: 110px;
     color: #fff;
-    background-image: url(../assets/images/header.jpg);
+    background-image: url(../../res/images/header.jpg);
     background-size: cover;
     margin-bottom: 40px;
     overflow-x: hidden;
@@ -71,7 +71,7 @@ body {
       .search-input {
         width: calc(100% - 90px);
         max-width: 1350px;
-        background-image: url(../assets/images/search.svg);
+        background-image: url(../../res/images/search.svg);
         background-repeat: no-repeat;
         background-size: 34px;
         background-position: 10px 5px;
@@ -101,7 +101,7 @@ body {
         position: absolute;
         width: 28px;
         height: 28px;
-        background-image: url(../assets/images/clear.svg);
+        background-image: url(../../res/images/clear.svg);
         background-size: 20px;
         background-position: center center;
         background-repeat: no-repeat;
@@ -119,7 +119,7 @@ body {
         position: absolute;
         width: 28px;
         height: 28px;
-        background-image: url(../assets/images/keyboard.svg);
+        background-image: url(../../res/images/keyboard.svg);
         background-size: 20px;
         background-position: center center;
         background-repeat: no-repeat;

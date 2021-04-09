@@ -5,8 +5,8 @@
   "private": true,
   "scripts": {
     "test": "jest",
-    "build": "webpack src/app.js --output dist/bundle.js --mode development ",
-    "start": "webpack-dev-server",
+    "build": "webpack src/js/app.js --output dist/bundle.js --mode development ",
+    "start": "webpack-dev-server src/js/app.js",
     "babel-node": "babel-node",
     "babel": "NODE_ENV=production babel app.js --out-dir dist --source-maps inline",
     "prepublishOnly": "npm run build"

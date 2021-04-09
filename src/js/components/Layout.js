@@ -2,7 +2,7 @@
 
 import ApiManager from './ApiManager';
 import Card from './Card';
-import KeyboardLayout from './keyboard/KeyboardLayout';
+import KeyboardLayout from '../keyboard/KeyboardLayout';
 
 export default class Layout {
   constructor() {

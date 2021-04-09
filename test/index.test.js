@@ -1,4 +1,4 @@
-import Card from '../src/Card';
+import Card from '../src/js/components/Card';
 
 test('card.Title should be Hello World', () => {
   expect(new Card({ Title: 'Hello World' })).toEqual(

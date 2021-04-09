@@ -67,7 +67,7 @@
 }
 
 .win {
-    background-image: url('../assets/images/lang.svg');
+    background-image: url('../../res/images/lang.svg');
     background-size: 60%;
     background-position: 12px 5px;
     background-repeat: no-repeat;
