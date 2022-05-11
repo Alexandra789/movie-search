@@ -1,6 +1,6 @@
 # movie-search
 
-Cайт для поиска фильмов, с использованием omdbApi и чистого JS, Webpack, Babel, Eslint и Bootstrap.
+Cайт для поиска фильмов, с использованием omdbAPI ,JS, Webpack, Babel, Eslint и Bootstrap.
 
 Demo: https://frosty-shaw-cd36b3.netlify.app/
 
